@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+### Digitalna Dalmacija JUNIORDev React 2024
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Praktični rad 2
 
-Currently, two official plugins are available:
+## Zadatak
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Napravite aplikaciju koja služi kao semafor za nogometnu utakmicu. Aplikacija bi trebala imati navedene funkcionalnosti:
 
-## Expanding the ESLint configuration
+prikaz ekipa (logo i ime ekipe)
+trenutni rezultat
+datum
+kontrole za podešavanje rezultata
+Na početku skicirajte izgled vaše aplikacije te pokušajte definirati od kojih će se komponenti sastojati aplikacija. Također razmislite koje vrijednosti stanja će vam biti potrebne za rad aplikacije i gdje ćete ih definirati (u kojoj komponenti). Vodite računa o specifičnim zahtjevima aplikacije (može li rezultat biti negativan?)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Primjer rješenja
 
-- Configure the top-level `parserOptions` property like this:
+Jedno od potencijalnih rješenja može izgledati ovako:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+![Primjer rješenja](https://github.com/anamarijapapic/JUNIORDev-React-02-Scoreboard/assets/92815435/19bbdd1c-de9a-4a5e-bb1b-4d39eb028ade)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Nadogradnja
+
+Po želji možete implementirati dodatne funkcionalnosti:
+
+- brojač minuta (stvarni ili sa tipkama za upravljanje)
+- ispis kretanja rezultata (1:0 - 6' min; 1:1 - 32' min; ...)
+- okvir za praćenje statistike (udarci, prekršaji, kartoni) sa tipkama za promjenu vrijednosti
+- tipku za reset svih vrijednosti
